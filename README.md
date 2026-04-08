@@ -14,5 +14,7 @@ npm test
 
 ## Notes
 
-- All source code, reports, and screenshots are inside the `Automated UI Testing` directory.
-- Open `Automated UI Testing/README.md` for more details about the test cases and scripts.
+- All source code, reports, and screenshots for UI automation are inside the `Automated UI Testing` directory.
+- API test artifacts will live inside the new `API Testing` directory.
+- Open `Automated UI Testing/README.md` for UI test details.
+- Open `API Testing/README.md` when you add API test scripts and documentation.
