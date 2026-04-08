@@ -1,5 +1,16 @@
 # Software Testing Using Playwright
 
+## Clone and run
+
+```bash
+git clone https://github.com/saliksalik/Software-Testing-Using-Playwright.git
+cd Software-Testing-Using-Playwright
+npm install
+npm test
+```
+
+All test source code is included in this repository, so anyone can clone it and run the suite locally.
+
 ## Overview
 
 This repository contains a Playwright automation suite for the Adactin Hotel App. It includes:
@@ -22,6 +33,12 @@ This repository contains a Playwright automation suite for the Adactin Hotel App
 - `test-results/` - test result artifacts
 
 ## Test Suites
+
+All JavaScript test files are included in this repo and are stored under the `tests/` folder:
+
+- `tests/e2e/` — end-to-end test code
+- `tests/positive/` — positive validation test code
+- `tests/negative/` — negative validation test code
 
 ### End-to-end tests
 
