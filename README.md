@@ -1,6 +1,6 @@
 
 
-This project now uses Playwright Test for API testing. Each test file covers one API concept with detailed comments for learning.
+
 
 ## What This Repository Is About 🚀
 
