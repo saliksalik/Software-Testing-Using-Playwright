@@ -1,0 +1,623 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\playwright.config.js",
+    "rootDir": "C:/Users/Dell/OneDrive/Desktop/Playwright_Assignment_2/Salik_[22K4403]_AdactinAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Dell/OneDrive/Desktop/Playwright_Assignment_2/Salik_[22K4403]_AdactinAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Dell/OneDrive/Desktop/Playwright_Assignment_2/Salik_[22K4403]_AdactinAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e\\e2e_booking.spec.js",
+      "file": "e2e/e2e_booking.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E2E booking flow: login, search, select, book, itinerary, logout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 65764,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Step 1: Login with valid credentials",
+                      "duration": 9816
+                    },
+                    {
+                      "title": "Step 2: Search hotels with valid mandatory fields",
+                      "duration": 3503
+                    },
+                    {
+                      "title": "Step 3: Select first available hotel and continue",
+                      "duration": 1198
+                    },
+                    {
+                      "title": "Step 4: Complete booking form and submit",
+                      "duration": 3502
+                    },
+                    {
+                      "title": "Step 5: Capture and validate generated Order ID",
+                      "duration": 9749
+                    },
+                    {
+                      "title": "Step 6: Verify same Order ID appears in My Itinerary",
+                      "duration": 36076
+                    },
+                    {
+                      "title": "Step 7: Logout and validate confirmation message",
+                      "duration": 930
+                    }
+                  ],
+                  "startTime": "2026-03-28T21:11:12.930Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\e2e-e2e_booking-E2E-bookin-9cc63-elect-book-itinerary-logout\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9df1e582a163655a296-3ef014deda8d5e5544eb",
+          "file": "e2e/e2e_booking.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "negative\\negative_booking_missing_firstname.spec.js",
+      "file": "negative/negative_booking_missing_firstname.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative: booking without first name shows required field error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:13.070Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\negative-negative_booking_-a5114--shows-required-field-error\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1cd8e1d5e60a45407553-71b10ca9b4c7f469bedd",
+          "file": "negative/negative_booking_missing_firstname.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "negative\\negative_invalid_credit_card.spec.js",
+      "file": "negative/negative_invalid_credit_card.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative: invalid credit card length and missing CVV show validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 18971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:13.040Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\negative-negative_invalid_-86843-missing-CVV-show-validation\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fad721faa58dd582327-0b0184cbd21adc421f0e",
+          "file": "negative/negative_invalid_credit_card.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "negative\\negative_invalid_login.spec.js",
+      "file": "negative/negative_invalid_login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative: invalid login shows exact error message",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 11231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:12.648Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\negative-negative_invalid_-6d787-n-shows-exact-error-message\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f39c14a6a43ad140595-a58fa47ab6e6d036d175",
+          "file": "negative/negative_invalid_login.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "negative\\negative_search_missing_location.spec.js",
+      "file": "negative/negative_search_missing_location.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative: search without mandatory location shows validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 8374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:24.686Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\negative-negative_search_m-e339a-y-location-shows-validation\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7381604eacbef5393248-a2c4b4282c6d80de3d42",
+          "file": "negative/negative_search_missing_location.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "negative\\negative_unauthorized_access.spec.js",
+      "file": "negative/negative_unauthorized_access.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative: direct access without login redirects to login page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9972,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:33.223Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\negative-negative_unauthor-793b9-gin-redirects-to-login-page\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "16da6d6d97cdef40618b-ce78a73fb81f1e5de20d",
+          "file": "negative/negative_unauthorized_access.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "positive\\positive_booking_confirmation.spec.js",
+      "file": "positive/positive_booking_confirmation.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Positive: booking flow reaches Booking Confirmation page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 32509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:33.335Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\positive-positive_booking_-0848f-s-Booking-Confirmation-page\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "957b7ad8cceddc4238d2-92338538686562cd553e",
+          "file": "positive/positive_booking_confirmation.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "positive\\positive_login.spec.js",
+      "file": "positive/positive_login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Positive: successful login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 14716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:33.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\positive-positive_login-Po-229a8-ogin-with-valid-credentials\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3d75daf2e5cffabd51af-418f74668b1369d5f28c",
+          "file": "positive/positive_login.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "positive\\positive_logout.spec.js",
+      "file": "positive/positive_logout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Positive: successful logout after login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11363,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:44.026Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\positive-positive_logout-P-97595-ccessful-logout-after-login\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93c58d83a18b1d62206a-f9368ad05bf6f9c2f8e3",
+          "file": "positive/positive_logout.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "positive\\positive_search.spec.js",
+      "file": "positive/positive_search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Positive: valid hotel search shows Select Hotel page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 12502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:48.421Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\positive-positive_search-P-1e155-rch-shows-Select-Hotel-page\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "258ba4417996f5cc3da3-5c3a59805e61e764a9a4",
+          "file": "positive/positive_search.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "positive\\positive_selection.spec.js",
+      "file": "positive/positive_selection.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Positive: successful hotel selection navigates to Book A Hotel page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 16825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-28T21:11:56.655Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\Playwright_Assignment_2\\Salik_[22K4403]_AdactinAutomation\\test-results\\positive-positive_selectio-8507c-igates-to-Book-A-Hotel-page\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f302a48c8dfb67c67be-530bd2154c69ed23c115",
+          "file": "positive/positive_selection.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-28T21:11:05.313Z",
+    "duration": 76412.17899999999,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
