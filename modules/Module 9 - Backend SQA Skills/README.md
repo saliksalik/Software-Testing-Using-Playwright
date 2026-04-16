@@ -23,7 +23,7 @@ npm run test:module-9
 ## Run one file example
 
 ```bash
-npx playwright test test/module-9/api.correctness.status.schema.fields.errors.test.js
+npx playwright test modules/Module 9 - Backend SQA Skills/api.correctness.status.schema.fields.errors.test.js
 ```
 
 ## Note

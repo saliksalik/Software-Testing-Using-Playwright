@@ -34,7 +34,7 @@ jobs:
         env:
           TARGET_ENV: ${{ matrix.target_env }}
         run: |
-          npx playwright test test/module-5/cicd.github-actions.integration.test.js test/module-5/environment.management.dev.qa.prod.test.js
+          npx playwright test modules/Module 5 - Data Driven and DevOps/cicd.github-actions.integration.test.js modules/Module 5 - Data Driven and DevOps/environment.management.dev.qa.prod.test.js
 
       - name: Upload Playwright report
         if: always()

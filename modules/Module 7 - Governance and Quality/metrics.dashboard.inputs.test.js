@@ -10,7 +10,7 @@ const { test, expect } = require('@playwright/test');
 // - Teams can track quality trends over time.
 // - Makes risk visible for management and engineering leads.
 // API-specific behavior:
-// - Produces JSON metrics artifact under test/module-7/output.
+// - Produces JSON metrics artifact under modules/Module 7 - Governance and Quality/output.
 // Sample metrics payload:
 // {
 //   passRate: 0.98,
@@ -19,7 +19,7 @@ const { test, expect } = require('@playwright/test');
 //   endpointRiskScore: 0.12
 // }
 // Where to see output:
-// - test/module-7/output/api-quality-metrics.json
+// - modules/Module 7 - Governance and Quality/output/api-quality-metrics.json
 // Quick memory:
 // If you cannot measure quality, you cannot improve quality.
 

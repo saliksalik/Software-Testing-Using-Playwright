@@ -23,7 +23,7 @@ function main() {
   const inputArg = process.argv[2];
   const outputArg = process.argv[3];
 
-  const defaultInputDir = path.join(__dirname, '..', '..', 'test', 'module-8', 'output');
+  const defaultInputDir = path.join(__dirname, '..', '..', 'modules', 'Module 8 - Security Checks', 'output');
   const inputPath = inputArg || newestJsonFile(defaultInputDir);
 
   if (!inputPath) {

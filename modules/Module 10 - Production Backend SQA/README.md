@@ -19,7 +19,7 @@ npm run test:module-10
 
 Run one file:
 
-npx playwright test test/module-10/api.db.correctness.required-fields.errors.test.js
+npx playwright test modules/Module 10 - Production Backend SQA/api.db.correctness.required-fields.errors.test.js
 
 ## Why this helps for jobs
 

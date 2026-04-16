@@ -103,7 +103,7 @@ npm run test:headed
 ```
 
 Important:
-- Your concept files in `test/module-1/*.test.js` and `test/module-2/*.test.js` are API tests using Playwright `request` fixture.
+- Your concept files in `modules/Module 1 - API Foundations/*.test.js` and `modules/Module 2 - Validation and Reliability/*.test.js` are API tests using Playwright `request` fixture.
 - These validate APIs directly and usually do not perform visible page clicks/typing.
 - To watch browser actions live, run the visual demo file below.
 
@@ -118,7 +118,7 @@ This opens a real browser window and shows a live on-screen panel while GET/POST
 ## Run one concept file
 
 ```bash
-npx playwright test test/module-1/post.static.body.test.js
+npx playwright test modules/Module 1 - API Foundations/post.static.body.test.js
 ```
 
 Replace the file path to run any single test.
@@ -209,65 +209,65 @@ npm run test:report
 
 ## Individual test files
 
-- `test/module-1/post.static.body.test.js` — POST using a hardcoded request body
-- `test/module-1/post.static.file.test.js` — POST using payload loaded from a JSON file
-- `test/module-1/post.dynamic.body.test.js` — POST using runtime variables in the request body
-- `test/module-1/post.dynamic.file.test.js` — POST using a JSON template file with placeholders
-- `test/module-1/get.headers.test.js` — GET request and response header validation
-- `test/module-1/query.params.test.js` — GET request with search/filter query parameters
-- `test/module-1/put.test.js` — PUT request for complete resource update
-- `test/module-1/patch.test.js` — PATCH request for partial update
-- `test/module-1/delete.test.js` — DELETE request and deletion validation logic
-- `test/module-1/visual.api.in-browser.test.js` — visual API demo in browser
-- `test/module-2/schema.validation.ajv.zod.test.js` — schema validation with AJV and Zod
-- `test/module-2/nested.json.validation.test.js` — nested objects and arrays validation
-- `test/module-2/negative.testing.errors.test.js` — 400/401/404 negative testing
-- `test/module-2/performance.latency.assertions.test.js` — latency and response-time assertions
-- `test/module-3/auth.handling.jwt.apikey.bearer.test.js` — JWT, API key, and bearer token auth handling
-- `test/module-3/global.auth.storageState.test.js` — reusable session setup with storageState
-- `test/module-3/cookies.header.interception.test.js` — cookies and header interception handling
-- `test/module-4/api.chaining.e2e.integration.test.js` — login/create/update/delete API chaining flow
-- `test/module-4/network.mocking.no-data-server-error.test.js` — intercepting API calls for no-data and server-error simulation
-- `test/module-4/hybrid.api-create.ui-verify.test.js` — hybrid testing with API data creation and UI validation
-- `test/module-5/data.driven.csv.excel.test.js` — data-driven execution using CSV and Excel sources
-- `test/module-5/environment.management.dev.qa.prod.test.js` — environment-aware execution for dev/qa/prod URLs
-- `test/module-5/cicd.github-actions.integration.test.js` — CI/CD-ready smoke checks for pipeline automation
-- `test/module-5/advanced.reporting.allure.logs.test.js` — request/response attachment examples for advanced reporting
-- `test/module-6/contract.openapi.validation.test.js` — contract testing with OpenAPI schema validation
-- `test/module-6/resilience.retry.timeout.idempotency.test.js` — resilience checks for retry/timeout/idempotency
-- `test/module-6/rate.limit.concurrency.test.js` — rate-limiting and concurrency handling checks
-- `test/module-6/versioning.backward.compatibility.test.js` — API versioning and backward compatibility assertions
-- `test/module-6/security.hardening.checks.test.js` — basic security hardening checks for API responses
-- `test/module-7/observability.correlation.trace.test.js` — observability checks for correlation/trace headers
-- `test/module-7/governance.error-contract.policy.test.js` — governance checks for error contract and status policy
-- `test/module-7/cdc.consumer.contract.test.js` — consumer-driven contract validation
-- `test/module-7/quality.gates.release.blocking.test.js` — release-blocking quality gate checks
-- `test/module-7/flakiness.management.reliability.test.js` — flaky-rate analysis and quarantine policy checks
-- `test/module-7/metrics.dashboard.inputs.test.js` — dashboard-ready API quality metrics artifact generation
-- `test/module-8/security.headers.passive.scan.test.js` — passive response-header security checks (OWASP A05/A02)
-- `test/module-8/security.authz.access-control.test.js` — unauthorized access checks for protected routes (OWASP A01)
-- `test/module-8/security.injection.probes.test.js` — safe injection probe behavior checks (OWASP A03)
-- `test/module-8/security.sensitive-files.exposure.test.js` — sensitive path exposure checks (OWASP A05/A02)
-- `test/module-8/security.helpers.js` — shared security reporting and optional gate helper
+- `modules/Module 1 - API Foundations/post.static.body.test.js` — POST using a hardcoded request body
+- `modules/Module 1 - API Foundations/post.static.file.test.js` — POST using payload loaded from a JSON file
+- `modules/Module 1 - API Foundations/post.dynamic.body.test.js` — POST using runtime variables in the request body
+- `modules/Module 1 - API Foundations/post.dynamic.file.test.js` — POST using a JSON template file with placeholders
+- `modules/Module 1 - API Foundations/get.headers.test.js` — GET request and response header validation
+- `modules/Module 1 - API Foundations/query.params.test.js` — GET request with search/filter query parameters
+- `modules/Module 1 - API Foundations/put.test.js` — PUT request for complete resource update
+- `modules/Module 1 - API Foundations/patch.test.js` — PATCH request for partial update
+- `modules/Module 1 - API Foundations/delete.test.js` — DELETE request and deletion validation logic
+- `modules/Module 1 - API Foundations/visual.api.in-browser.test.js` — visual API demo in browser
+- `modules/Module 2 - Validation and Reliability/schema.validation.ajv.zod.test.js` — schema validation with AJV and Zod
+- `modules/Module 2 - Validation and Reliability/nested.json.validation.test.js` — nested objects and arrays validation
+- `modules/Module 2 - Validation and Reliability/negative.testing.errors.test.js` — 400/401/404 negative testing
+- `modules/Module 2 - Validation and Reliability/performance.latency.assertions.test.js` — latency and response-time assertions
+- `modules/Module 3 - Authentication and Session/auth.handling.jwt.apikey.bearer.test.js` — JWT, API key, and bearer token auth handling
+- `modules/Module 3 - Authentication and Session/global.auth.storageState.test.js` — reusable session setup with storageState
+- `modules/Module 3 - Authentication and Session/cookies.header.interception.test.js` — cookies and header interception handling
+- `modules/Module 4 - Integration and Mocking/api.chaining.e2e.integration.test.js` — login/create/update/delete API chaining flow
+- `modules/Module 4 - Integration and Mocking/network.mocking.no-data-server-error.test.js` — intercepting API calls for no-data and server-error simulation
+- `modules/Module 4 - Integration and Mocking/hybrid.api-create.ui-verify.test.js` — hybrid testing with API data creation and UI validation
+- `modules/Module 5 - Data Driven and DevOps/data.driven.csv.excel.test.js` — data-driven execution using CSV and Excel sources
+- `modules/Module 5 - Data Driven and DevOps/environment.management.dev.qa.prod.test.js` — environment-aware execution for dev/qa/prod URLs
+- `modules/Module 5 - Data Driven and DevOps/cicd.github-actions.integration.test.js` — CI/CD-ready smoke checks for pipeline automation
+- `modules/Module 5 - Data Driven and DevOps/advanced.reporting.allure.logs.test.js` — request/response attachment examples for advanced reporting
+- `modules/Module 6 - Enterprise Reliability/contract.openapi.validation.test.js` — contract testing with OpenAPI schema validation
+- `modules/Module 6 - Enterprise Reliability/resilience.retry.timeout.idempotency.test.js` — resilience checks for retry/timeout/idempotency
+- `modules/Module 6 - Enterprise Reliability/rate.limit.concurrency.test.js` — rate-limiting and concurrency handling checks
+- `modules/Module 6 - Enterprise Reliability/versioning.backward.compatibility.test.js` — API versioning and backward compatibility assertions
+- `modules/Module 6 - Enterprise Reliability/security.hardening.checks.test.js` — basic security hardening checks for API responses
+- `modules/Module 7 - Governance and Quality/observability.correlation.trace.test.js` — observability checks for correlation/trace headers
+- `modules/Module 7 - Governance and Quality/governance.error-contract.policy.test.js` — governance checks for error contract and status policy
+- `modules/Module 7 - Governance and Quality/cdc.consumer.contract.test.js` — consumer-driven contract validation
+- `modules/Module 7 - Governance and Quality/quality.gates.release.blocking.test.js` — release-blocking quality gate checks
+- `modules/Module 7 - Governance and Quality/flakiness.management.reliability.test.js` — flaky-rate analysis and quarantine policy checks
+- `modules/Module 7 - Governance and Quality/metrics.dashboard.inputs.test.js` — dashboard-ready API quality metrics artifact generation
+- `modules/Module 8 - Security Checks/security.headers.passive.scan.test.js` — passive response-header security checks (OWASP A05/A02)
+- `modules/Module 8 - Security Checks/security.authz.access-control.test.js` — unauthorized access checks for protected routes (OWASP A01)
+- `modules/Module 8 - Security Checks/security.injection.probes.test.js` — safe injection probe behavior checks (OWASP A03)
+- `modules/Module 8 - Security Checks/security.sensitive-files.exposure.test.js` — sensitive path exposure checks (OWASP A05/A02)
+- `modules/Module 8 - Security Checks/security.helpers.js` — shared security reporting and optional gate helper
 - `scripts/security/generate-jira-csv.js` — create Jira CSV from latest security findings
 - `scripts/security/push-jira-findings.js` — create Jira bug tickets using Jira REST API
-- `test/module-9/api.correctness.status.schema.fields.errors.test.js` — API status/schema/required-field/error-format validation
-- `test/module-9/business.logic.discount.totals.workflow.test.js` — discount logic, totals, and workflow transition checks
-- `test/module-9/authn.authz.login.token.roles.admin-block.test.js` — login, token expiry, roles, and admin-block checks
-- `test/module-9/database.validation.duplicates.rollback.consistency.test.js` — save/duplicate/rollback/consistency validation
-- `test/module-9/integration.services.thirdparty.retry.timeout.test.js` — service-to-service flow and retry/timeout handling
-- `test/module-9/negative.testing.invalid.missing.bad-headers.malformed.test.js` — invalid payload/headers/malformed request checks
-- `test/module-9/performance.response-time.concurrency.rate-limit.test.js` — response-time, concurrency, and rate-limit checks
-- `test/module-9/security.sqa.headers.access.injection.secrets.test.js` — SQA-level security checks for headers/access/injection/secrets
-- `test/module-9/observability.trace.logging.error-contract.test.js` — trace-id, logs, and useful error-contract checks
-- `test/module-10/api.db.correctness.required-fields.errors.test.js` — API correctness with DB-backed create and validation errors
-- `test/module-10/auth.rbac.token-expiry.admin-protection.test.js` — login, token expiry, and admin RBAC protection checks
-- `test/module-10/database.transactions.rollback.consistency.test.js` — transaction rollback and uniqueness consistency checks
-- `test/module-10/integration.outbox.retry.timeout.idempotency.test.js` — outbox retry and idempotent event-consumer behavior
-- `test/module-10/negative.bad-input.headers.payload.test.js` — malformed payload and bad-header negative testing
-- `test/module-10/observability.audit.trace.error-contract.test.js` — traceable errors and audit log expectations
-- `test/module-10/db.simulator.js` — deterministic fake database for production-style backend SQA patterns
-- `test/helpers.js` — shared helper functions for JSON loading and template rendering
+- `modules/Module 9 - Backend SQA Skills/api.correctness.status.schema.fields.errors.test.js` — API status/schema/required-field/error-format validation
+- `modules/Module 9 - Backend SQA Skills/business.logic.discount.totals.workflow.test.js` — discount logic, totals, and workflow transition checks
+- `modules/Module 9 - Backend SQA Skills/authn.authz.login.token.roles.admin-block.test.js` — login, token expiry, roles, and admin-block checks
+- `modules/Module 9 - Backend SQA Skills/database.validation.duplicates.rollback.consistency.test.js` — save/duplicate/rollback/consistency validation
+- `modules/Module 9 - Backend SQA Skills/integration.services.thirdparty.retry.timeout.test.js` — service-to-service flow and retry/timeout handling
+- `modules/Module 9 - Backend SQA Skills/negative.testing.invalid.missing.bad-headers.malformed.test.js` — invalid payload/headers/malformed request checks
+- `modules/Module 9 - Backend SQA Skills/performance.response-time.concurrency.rate-limit.test.js` — response-time, concurrency, and rate-limit checks
+- `modules/Module 9 - Backend SQA Skills/security.sqa.headers.access.injection.secrets.test.js` — SQA-level security checks for headers/access/injection/secrets
+- `modules/Module 9 - Backend SQA Skills/observability.trace.logging.error-contract.test.js` — trace-id, logs, and useful error-contract checks
+- `modules/Module 10 - Production Backend SQA/api.db.correctness.required-fields.errors.test.js` — API correctness with DB-backed create and validation errors
+- `modules/Module 10 - Production Backend SQA/auth.rbac.token-expiry.admin-protection.test.js` — login, token expiry, and admin RBAC protection checks
+- `modules/Module 10 - Production Backend SQA/database.transactions.rollback.consistency.test.js` — transaction rollback and uniqueness consistency checks
+- `modules/Module 10 - Production Backend SQA/integration.outbox.retry.timeout.idempotency.test.js` — outbox retry and idempotent event-consumer behavior
+- `modules/Module 10 - Production Backend SQA/negative.bad-input.headers.payload.test.js` — malformed payload and bad-header negative testing
+- `modules/Module 10 - Production Backend SQA/observability.audit.trace.error-contract.test.js` — traceable errors and audit log expectations
+- `modules/Module 10 - Production Backend SQA/db.simulator.js` — deterministic fake database for production-style backend SQA patterns
+- `modules/helpers.js` — shared helper functions for JSON loading and template rendering
 
 ## GitHub Actions CI
 
@@ -305,7 +305,7 @@ Additional APIs used by specific modules:
 Note about visuals:
 
 - Most files are backend/API tests using Playwright `request`, so they show pass/fail in terminal/report.
-- Visual browser actions are available in `test/module-1/visual.api.in-browser.test.js` and UI/hybrid files.
+- Visual browser actions are available in `modules/Module 1 - API Foundations/visual.api.in-browser.test.js` and UI/hybrid files.
 
 Supported endpoints:
 

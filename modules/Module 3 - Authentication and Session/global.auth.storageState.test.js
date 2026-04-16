@@ -16,7 +16,7 @@ const { test, expect } = require('@playwright/test');
 // - /cookies -> { cookies: { sessionToken: 'module3-demo-session' } }
 // Where to see real response:
 // - Add console.log(cookiesBody)
-// - Inspect saved state file under test/module-3/.auth/user.json
+// - Inspect saved state file under modules/Module 3 - Authentication and Session/.auth/user.json
 // Quick memory: storageState = snapshot of cookies/localStorage/sessionStorage.
 
 const authDir = path.join(__dirname, '.auth');

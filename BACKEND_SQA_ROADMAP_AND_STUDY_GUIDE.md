@@ -177,7 +177,7 @@ Minimum success criteria:
 ## Project files to use during revision
 
 1. Master roadmap: [MASTER_ROADMAP.md](MASTER_ROADMAP.md)
-2. Module 8 guide: [test/module-8/README.md](test/module-8/README.md)
-3. Module 9 guide: [test/module-9/README.md](test/module-9/README.md)
-4. Module 10 guide: [test/module-10/README.md](test/module-10/README.md)
+2. Module 8 guide: [modules/Module 8 - Security Checks/README.md](modules/Module 8 - Security Checks/README.md)
+3. Module 9 guide: [modules/Module 9 - Backend SQA Skills/README.md](modules/Module 9 - Backend SQA Skills/README.md)
+4. Module 10 guide: [modules/Module 10 - Production Backend SQA/README.md](modules/Module 10 - Production Backend SQA/README.md)
 5. Main project guide: [README.md](README.md)

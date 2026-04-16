@@ -84,7 +84,7 @@ async function main() {
   }
 
   const inputArg = process.argv[2];
-  const reportDir = path.join(__dirname, '..', '..', 'test', 'module-8', 'output');
+  const reportDir = path.join(__dirname, '..', '..', 'modules', 'Module 8 - Security Checks', 'output');
   const reportPath = inputArg || newestJsonFile(reportDir);
 
   if (!reportPath) {

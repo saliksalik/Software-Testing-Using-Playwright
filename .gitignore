@@ -3,7 +3,8 @@ mochawesome-report/
 coverage/
 playwright-report/
 test-results/
-test/module-7/output/
-test/module-8/output/
-test/module-9/output/
-test/module-10/output/
+modules/Module 7 - Governance and Quality/output/
+modules/Module 8 - Security Checks/output/
+modules/Module 9 - Backend SQA Skills/output/
+modules/Module 10 - Production Backend SQA/output/
+negative-screenshots/

@@ -17,7 +17,7 @@ Important:
 
 ## Default behavior
 
-- Tests generate JSON and Markdown reports inside `test/module-8/output`.
+- Tests generate JSON and Markdown reports inside `modules/Module 8 - Security Checks/output`.
 - Tests do not fail just because findings exist.
 - To enforce fail-on-high/critical findings, set `SECURITY_GATE_ENABLED=true`.
 
@@ -50,7 +50,7 @@ npm run security:scan
 npm run security:jira:csv
 
 This creates:
-- `test/module-8/output/jira-import.csv`
+- `modules/Module 8 - Security Checks/output/jira-import.csv`
 
 2) Direct Jira API issue creation
 

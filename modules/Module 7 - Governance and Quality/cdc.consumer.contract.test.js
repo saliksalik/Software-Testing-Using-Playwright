@@ -12,7 +12,7 @@ const { test, expect } = require('@playwright/test');
 // - Prevents accidental breaking API changes.
 // - Gives clear contract ownership between teams.
 // API-specific behavior:
-// - Contract file: test/module-7/data/consumer.contract.user.v1.json
+// - Contract file: modules/Module 7 - Governance and Quality/data/consumer.contract.user.v1.json
 // - Provider payload in this demo is simulated.
 // Sample payload:
 // { id: 1, name: 'Leanne Graham', email: 'leanne@example.com' }

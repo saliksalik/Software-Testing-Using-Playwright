@@ -11,7 +11,7 @@ const { test, expect } = require('@playwright/test');
 // - Useful as a release gate for backward compatibility.
 // API-specific behavior:
 // - Endpoint: GET /posts/1 (JSONPlaceholder)
-// - Contract source: test/module-6/data/openapi.posts.v1.json
+// - Contract source: modules/Module 6 - Enterprise Reliability/data/openapi.posts.v1.json
 // Sample response:
 // - { userId: 1, id: 1, title: '...', body: '...' }
 // Where to see real response:
