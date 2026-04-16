@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": "U-100", "email": "admin@shop.test", "role": "admin", "status": "active" },
+    { "id": "U-101", "email": "buyer@shop.test", "role": "user", "status": "active" }
+  ],
+  "orders": [
+    { "orderId": "ORD-100", "userId": "U-101", "amount": 1200, "status": "created" }
+  ]
+}

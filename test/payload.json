@@ -1,0 +1,5 @@
+{
+  "title": "Static File Post",
+  "body": "Post body from a static JSON file.",
+  "userId": 1
+}

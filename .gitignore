@@ -1,0 +1,9 @@
+node_modules/
+mochawesome-report/
+coverage/
+playwright-report/
+test-results/
+test/module-7/output/
+test/module-8/output/
+test/module-9/output/
+test/module-10/output/

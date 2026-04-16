@@ -1,0 +1,86 @@
+{
+  "title": "OWASP Top 10 SQA Security Checklist",
+  "version": "2021",
+  "items": [
+    {
+      "id": "A01",
+      "name": "Broken Access Control",
+      "automationFocus": [
+        "unauthorized access to admin endpoints returns 401/403",
+        "sensitive endpoints are not publicly readable"
+      ]
+    },
+    {
+      "id": "A02",
+      "name": "Cryptographic Failures",
+      "automationFocus": [
+        "HTTPS endpoints are used",
+        "secure cookie flags are present"
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "Injection",
+      "automationFocus": [
+        "input reflection checks for script payloads",
+        "suspicious query inputs do not trigger server errors"
+      ]
+    },
+    {
+      "id": "A04",
+      "name": "Insecure Design",
+      "automationFocus": [
+        "critical business actions require authorization",
+        "negative flow tests for abuse scenarios"
+      ]
+    },
+    {
+      "id": "A05",
+      "name": "Security Misconfiguration",
+      "automationFocus": [
+        "security headers present",
+        "default sensitive files not exposed"
+      ]
+    },
+    {
+      "id": "A06",
+      "name": "Vulnerable and Outdated Components",
+      "automationFocus": [
+        "dependency scan in CI pipeline",
+        "lockfile and update policy checks"
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "Identification and Authentication Failures",
+      "automationFocus": [
+        "unauthenticated requests rejected",
+        "session cookies are HttpOnly/Secure"
+      ]
+    },
+    {
+      "id": "A08",
+      "name": "Software and Data Integrity Failures",
+      "automationFocus": [
+        "CI artifact integrity checks",
+        "trusted package sources only"
+      ]
+    },
+    {
+      "id": "A09",
+      "name": "Security Logging and Monitoring Failures",
+      "automationFocus": [
+        "error responses include trace correlation ID",
+        "security-relevant events are observable"
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "Server-Side Request Forgery",
+      "automationFocus": [
+        "external URL fetch features are validated",
+        "metadata endpoint access is blocked"
+      ]
+    }
+  ]
+}

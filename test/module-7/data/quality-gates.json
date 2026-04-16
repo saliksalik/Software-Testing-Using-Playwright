@@ -1,0 +1,5 @@
+{
+  "maxP95LatencyMs": 1500,
+  "minPassRate": 0.95,
+  "maxFlakyRate": 0.05
+}

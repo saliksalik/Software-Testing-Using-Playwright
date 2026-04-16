@@ -1,0 +1,15 @@
+{
+  "cookies": [
+    {
+      "name": "sessionToken",
+      "value": "module3-demo-session",
+      "domain": "httpbin.org",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

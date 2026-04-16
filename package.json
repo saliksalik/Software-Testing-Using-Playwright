@@ -1,0 +1,32 @@
+{
+  "name": "api-testing-practice",
+  "version": "1.0.0",
+  "description": "Sample API testing practice project using Playwright API tests.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed --workers=1",
+    "test:visual": "npx playwright test test/module-1/visual.api.in-browser.test.js --headed --workers=1",
+    "test:module-5": "npx playwright test test/module-5",
+    "test:module-5:allure": "npx playwright test test/module-5 --reporter=line,allure-playwright",
+    "test:module-6": "npx playwright test test/module-6",
+    "test:module-7": "npx playwright test test/module-7",
+    "test:module-8": "npx playwright test test/module-8",
+    "test:module-9": "npx playwright test test/module-9",
+    "test:module-10": "npx playwright test test/module-10",
+    "security:scan": "npx playwright test test/module-8 --workers=1 --reporter=list",
+    "security:jira:csv": "node scripts/security/generate-jira-csv.js",
+    "security:jira:push": "node scripts/security/push-jira-findings.js",
+    "report": "npx playwright show-report",
+    "test:report": "npm test && npm run report",
+    "install:playwright": "npx playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.0.0",
+    "ajv": "^8.17.1",
+    "allure-playwright": "^3.3.3",
+    "csv-parse": "^5.5.6",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  }
+}
